@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Auth App",
+    "slug": "auth-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "authmobile",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.authmobile.app",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "android": {
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#6366f1"
+      },
+      "package": "com.authmobile.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#6366f1"
+        }
+      ]
+    ]
+  }
+}
